@@ -1,0 +1,68 @@
+header{
+    font-size:x-large;
+    font-weight: bold;
+}
+.Fields{
+    color: red;
+}
+
+legend{
+    background-color: blanchedalmond;
+    padding: 6px;
+}
+
+div{
+    padding: 3px;
+}
+
+td{
+    width:50%
+}
+
+.QuizQ1{
+    content: "\a";
+    white-space:pre-line;
+}
+
+.QuizQ2{
+    content: "\a";
+    white-space:pre-line;
+}
+
+.QuizQ3{
+    display: flex;
+    align-items: center;
+}
+
+.Q5A{
+    content: "\a";
+    white-space:pre-line;
+}
+
+.Q5S, .Q6S{
+    display: flex;
+}
+
+.Q5P, .Q6P{
+    padding: 5px;
+    width: 15%;
+    height: 15%;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.QuizQ6{
+    content: "\a";
+    white-space:pre-line;
+}
+
+.QuizQ7{
+    display: inline-flex;
+}
+
+.Q7A {
+    width: 65%;
+    height: 70px;
+}

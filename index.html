@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+<!--
+    CSIS 1280 Lecture 7 Lab: Web Form 
+    Name: WANG CHUN NG
+    SID: 300355870
+    DATE: 10 Mar 2022 
+
+    Filename: formlab.html
+   -->
+<meta charset="utf-8">
+<title> FormLab</title>
+<link href="css/style.css" rel="stylesheet" />
+</head>
+
+<header> Lecture 7 Lab: Web Form </header>
+<p class="Fields"> Fields with * are required </p>
+<body>
+	
+ <section>
+   <form id="survey" action="https://formspree.io/4ADE845SD" method="post">
+       <fieldset class="custInfo"> 
+            
+            <TABLE CELLPADDING=8 CELLSPACING=0 WIDTH=80%>
+            <legend>Your Personal Information</legend>
+            
+            
+
+            <tr class="YPI">
+               <td>
+               <label for="fullname">Full Name*: </label>
+               </td>
+               <td colspan="3">
+               <input name="custname" class="name" type="text" placeholder="First and last name" />
+               </td>
+            </tr>
+
+            <tr class="YPI"> 
+               <td> <label for="mail">E-mail*</label> </td>
+               <td><input name="custEmail" class="mail" type="email" placeholder="someone@somewhere.com" /></td>
+            </tr>
+
+            <tr class="YPI"> 
+                <td><label for="study">Current Study: </label> </td>
+                <td><input name="Curstudy" class="study" type="text" value="Douglas College" /> </td>
+            </tr>
+
+             <tr class="YPI"> 
+               <td><label for="Age">Age: </label></td>
+               <td><input name="Curstudy" class="age" type="text" value="20" /></td>
+             </tr>
+            </TABLE>
+            </fieldset>
+
+            <fieldset id="Quiz">
+
+                <legend>Your Quiz</legend>
+
+            <div class="Quiz">            
+               <label for="Q1">1. What is the result of the following equation? </label>
+               <p> 2²x5 = 
+               <input name="Q1A" id="Q1A" type="text" />
+            </div>
+
+            <div class="QuizQ2"> 
+               <label for="Q2">2. What does the acronym W3C stand for? </label>
+               <select name="orderType" id="order">
+                  <option value="order1" selected>3rd World War Coalition </option>
+                  <option value="order2">World Wide WarCraft</option>
+                  <option value="order3">World Wide Web Consortium</option>
+                  <option value="order3">I'm afraid to answer it</option>
+                  <option value="order4">No War Please! Stand with Ukraine</option>
+               </select>
+            </div> 
+
+            <div class="QuizQ3">            
+                <label for="Q3">3. CSS is an abbreivation of </label>
+                <input name="Q3A" class="Q3A" type="text" /> <p> style sheet </p>
+             </div>
+
+             <div class="QuizQ4">            
+                <label for="Q4">4. Select all the (scripting) languages we learn in CSIS 1280?</label>
+                <section class="Q4A">
+                <input name="Q4A1" id="Q4A1" type="radio"> HTML
+                <input name="Q4A2" id="Q4A2" type="radio"> CSS
+                <input name="Q4A3" id="Q4A3" type="radio"> JavaScript
+                <input name="Q4A4" id="Q4A4" type="radio"> PHP
+                <input name="Q4A5" id="Q4A5" type="radio"> C#
+                <input name="Q4A6" id="Q4A6" type="radio"> Java
+             </section>
+             </div>
+
+             <div class="QuizQ5">            
+                <label for="Q5">5. Consider the picture of a DOM structure below. Which of the following selector  <span class="bolded"> CANNOT </span> be used all the 〈p〉elements?  </label>
+                <section class="Q5S">
+                    <section class="Q5A">
+                <input name="p" class="Q5A1" type="radio"> p
+                <input name="h1 ~ p" class="Q5A2" type="radio"> h1 ~ p
+                <input name="article p" class="Q5A3" type="radio"> article p
+                <input name="article > p" class="Q5A4" type="radio"> article > p
+                <input name="h1 + p" class="Q5A5" type="radio"> h1 + p
+                        </section>
+                <img src="image/Q5.png" class="Q5P">
+                </section>
+             </div>
+
+
+             <div class="QuizQ6">            
+                <label for="Q6">6. Consider the picture of a DOM structure below. Which of the following selector  <span class="bolded"> CAN </span> be used all the identified〈li〉elements?  </label>
+                <section class="Q6S">
+                    <section class="Q6A">
+                <input name="Q6A1" id="Q4A1" type="radio"> li
+                <input name="Q6A1" id="Q4A1" type="radio"> li:nth-child(2n+1)
+                <input name="Q6A1" id="Q4A1" type="radio"> ul > li:(2n+1)
+                <input name="Q6A1" id="Q4A1" type="radio"> ul > li 
+                <input name="Q6A1" id="Q4A1" type="radio"> ul > li(2n+1)
+                     </section>
+                    <img src="image/Q6.png" class="Q6P"> 
+                </section>
+             </div>
+
+             <div class="QuizQ7">
+            <label for="commName">7. Douglas College and the Coqiutlam campus was named after the former Governor and Liutenat-Governor of British Columbia. What are their names ?</label> 
+            <textarea class="Q7A" name="commName" id="commBox"></textarea>
+            <div> 
+        </fieldset>    
+      </section>
+
+        <input type="submit" value="Submit">
+        <button> Cancel </button>
+    </body>
+
+</html>
